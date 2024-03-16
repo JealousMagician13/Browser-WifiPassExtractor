@@ -1,6 +1,6 @@
 **Password Exfiltration Tool:**
 
-This tool facilitates the exfiltration of passwords from Chromium-based browsers using a Rubber Ducky to your discord channel in your server. 
+This tool facilitates the exfiltration of passwords from Chromium-based browsers using a Rubber Ducky to a discord channel in your server. 
 
 **Usage:**
 
