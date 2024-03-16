@@ -1,4 +1,4 @@
-**Password Exfiltration Tool**
+**Password Exfiltration Tool:**
 
 This tool facilitates the exfiltration of passwords from Chromium-based browsers using a Rubber Ducky. 
 
