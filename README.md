@@ -1,7 +1,3 @@
-Certainly, here's a revised version for your GitHub README file:
-
----
-
 **Password Exfiltration Tool**
 
 This tool facilitates the exfiltration of passwords from Chromium-based browsers using a Rubber Ducky. 
