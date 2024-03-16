@@ -4,9 +4,9 @@ This tool facilitates the exfiltration of passwords from Chromium-based browsers
 
 **Usage:**
 
-1. **Update Discord Webhook Link**: Before usage, ensure to update the Discord webhook link in the provided batch file.
+1. **Update Discord Webhook Link**: Before usage ensure to create and replace the Discord webhook link in the provided batch file with your own, you can learn to create one [here](https://www.youtube.com/watch?v=fKksxz2Gdnc).
 
-2. **Plug in Rubber Ducky**: Insert the Rubber Ducky into the target system's USB port.
+2. **Plug in Rubber Ducky**: Copy the code of the ducky script from PwnedPass.txt to your ducky and Insert the Rubber Ducky into the target system's USB port.
 
 3. **Initiate Exfiltration**: Execute the batch file and observe the exfiltration process.
 
