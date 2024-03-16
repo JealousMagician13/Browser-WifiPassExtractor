@@ -10,6 +10,8 @@ This tool facilitates the exfiltration of passwords from Chromium-based browsers
 
 3. **Initiate Exfiltration**: Execute the batch file and observe the exfiltration process.
 
+https://github.com/JealousMagician13/Browser-WifiPassExtarctor/assets/77805708/f3dab0d1-d33b-4765-bbb8-7c81a717f0bb
+
 **Compatibility:**
 
 This tool is compatible with most Chromium-based browsers, ensuring versatility and effectiveness across various platforms.
