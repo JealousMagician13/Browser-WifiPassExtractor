@@ -45,8 +45,9 @@ STRING .\d.bat
 DELAY 1000
 ENTER
 DELAY 1000
-STRING del m.exe d.bat
+STRING del m.exe ,d.bat
 DELAY 1000
 STRING exit
 ENTER
+
 
